@@ -1,7 +1,7 @@
 # Stock App 📈 (Java + SQLite + Docker)
 
 A simple Java application that simulates stock price tracking, persists data into an SQLite database, and runs inside Docker.  
-The app periodically generates mock Dow Jones prices and stores them for later analysis.
+The app periodically generates Dow Jones prices and stores them for later analysis.
 
 ---
 
