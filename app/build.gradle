@@ -1,0 +1,30 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.yahoofinance-api:YahooFinanceAPI:3.17.0' 
+    implementation 'org.xerial:sqlite-jdbc:3.42.0.0'
+    implementation 'com.google.guava:guava:32.1.2-jre'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(20)
+    }
+}
+
+application {
+    mainClass.set('org.example.App')
+}
+
+test {
+    useJUnitPlatform()
+}
